@@ -1,0 +1,10 @@
+import java.util.*;
+import java.util.stream.*;
+public class FirstElement {
+    public static void main(String args[]) {
+            List<Integer> myList = Arrays.asList(254,10,36,859,45,178,115);
+            myList.stream()
+                  .findFirst()
+                  .ifPresent(System.out::println);
+    }
+}
